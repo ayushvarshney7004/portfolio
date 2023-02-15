@@ -19,18 +19,19 @@ const about = () => {
           </p>
         </div>
         <p className="text-xl mt-20 ">
-          react .js developer , studied from Amity University , Noida having
-          skill in web , currently , i am working on application using the
-          react.js , Tailwind , next.js and firebase. planning to build more
-          stuff , which might help world to be a better place.
+          I solve problems in ways that are understandable. At Amity University,
+          where I am completing my junior year in the College of Engineering. I
+          learned how to solve modern-day problems with basic strategies.
+          *concentrate on web development and software development, databases.
+          *currently learning React and hope will complete in next few months.
+          *Also interested in business prospects and modern-day solutions. I
+          hope to complete my skills and get real-life experience and important
+          technical skills. I am not at my finest quality but strive for one
+          someday.
         </p>
         <br />
-        <p className="text-xl">
-          react .js developer , studied from Amity University , Noida having
-          skill in web , currently , i am working on application using the
-          react.js , Tailwind , next.js and firebase. planning to build more
-          stuff , which might help world to be a better place.
-        </p>
+        {/* <p className="text-xl">
+        </p> */}
       </div>
     </div>
   );

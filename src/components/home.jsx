@@ -14,13 +14,13 @@ const home = () => {
       >
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-2xl sm:text-7xl font-bold text-blue-800">
-            I am Full Stack Developer!!
+            Hi ! , I am Ayush Varshney (react.js developer)
           </h2>
           <p className="text-white-600 py-4 max-w-md">
-            react .js developer , studied from Amity University , Noida having
-            skill in web , currently , i am working on application using the
-            react.js , Tailwind , next.js and firebase. planning to build more
-            stuff , which might help world to be a better place.
+            Building apps and web application form scratch here i am used to
+            with certain web technolgies just like React.JS i am open to work
+            for any role offered here on. Aiming for more oppertunities from
+            across the world.
           </p>
           <div>
             <button

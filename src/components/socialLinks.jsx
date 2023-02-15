@@ -11,7 +11,7 @@ const SocialLinks = () => {
           linkedin <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/ayush-varshney-4155a0194/",
       style: "rounded-tr-md",
     },
     {
