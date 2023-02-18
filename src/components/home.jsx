@@ -24,8 +24,9 @@ const home = () => {
             across the world.
           </p>
           <div>
-            <Link to={experience} smooth duration={500}>
+            <Link to="experience" smooth duration={500}>
               <button
+                to="experience"
                 className="group text-white w-fit px-6 py-3 my-2 flex items-center
             rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
               >
