@@ -58,12 +58,12 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
-      className="bg-gradient-to-b from-purple-600 via-blue-300 to-purple-500 w-full h-screen"
+      name="Experience"
+      className="bg-gradient-to-b from-cyan-600 via-blue-300 to-blue-200 w-full h-screen"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline text-white">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
@@ -75,7 +75,11 @@ const Experience = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img
+                src={src}
+                alt=""
+                className="w-20 mx-auto text-black font-semibold"
+              />
               <p className="mt-4">{title}</p>
             </div>
           ))}

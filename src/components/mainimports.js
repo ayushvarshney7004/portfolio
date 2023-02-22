@@ -4,7 +4,7 @@ import SocialLinks from "./socialLinks";
 import Experience from "./experience";
 import About from "./about";
 import Contact from "./contact";
-import Navbar from "./navbar";
+import Navbar from "./navBar/navbar";
 const mainimports = () => {
   return (
     <Fragment>
