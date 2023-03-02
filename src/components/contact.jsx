@@ -1,6 +1,18 @@
 import React from "react";
-
+import UseInput from "../hooks/use-inputs";
 const Contact = () => {
+  const {
+    value: enteredEmail,
+    isValid: emailIsValid,
+    hasError: emailInputHasError,
+    valueChangeHandler: emailInputChangeHandler,
+    InputBlurHandler: emailInputBlurHandler,
+  } = UseInput((value) => value.includes("@"));
+
+  let formIsValid = false;
+  if (emailIsValid) {
+    formIsValid = true;
+  }
   return (
     <div
       name="contact"
@@ -27,11 +39,19 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <input
-              type="email"
+              type="text"
               name="email"
+              value={enteredEmail}
+              onChange={emailInputChangeHandler}
+              onBlur={emailInputBlurHandler}
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
+            {emailInputHasError && (
+              <p className="text-red-400">
+                email can not be without "@" , Add "@" to the your email
+              </p>
+            )}
 
             <textarea
               name="message"
@@ -40,7 +60,10 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button
+              disabled={!formIsValid}
+              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
+            >
               Let's talk
             </button>
           </form>
